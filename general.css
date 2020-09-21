@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+}
+
+.container{
+    background: #06f;
+    height: 100%;
+}
+
+.topPate, .rightPate, .bottomPate, .leftPate{
+    position: absolute;
+    background: #f80;
+}
+
+.topPate{
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20px;
+}
+
+.rightPate{
+    right: 0;
+    top: 0;
+    width: 20px;
+    bottom: 0;
+    background:  linear-gradient( 190deg, red, transparent), #f57;
+}
+
+.bottomPate{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+}
+
+.leftPate{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+}
+
+.bite{
+   background: #4f4; 
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   height: 200px;
+   width: 20px;
+   transition: top .002s linear;
+   border-radius: 12px;
+   z-index: 5;
+}
+
+.bal{
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    background: tomato;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: top 0.02s linear, left 0.02s linear;
+    z-index: 5;
+}
+
+.score{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    z-index: 4;
+    font-weight: 900;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.infoCard{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.infoCard__result{
+    font-size: 24px;
+}
+
+.infoCard__subtitle{
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 900;
+}
+
+.infoCard__doRestart{
+    font-size: 24px;
+    background: #4f4;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.infoCard__block{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
